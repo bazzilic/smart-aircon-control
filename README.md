@@ -10,15 +10,13 @@ Alright, first entry.
 
 What I want to achieve by the end of the project.
 
-**Plan MIN**
-A device that can
+**Plan MIN**: A device that can
 
 - Turn the aircon on and off
 - Be controlled through an API
 - Be controlled through Google Home ("Hey Google turn on the aircon")
 
-**Plan MAX**
-A device that can do plan MIN and also
+**Plan MAX**: A device that can do everything from plan MIN and also
 
 - Set the desired settings on the aircon
 - Detect room temperature and switch between aircon and fan
@@ -28,7 +26,7 @@ I know that there are devices out there  that you can buy and that can do the wh
 
 I'm going to focus on Mitsubishi Electric aircons because that's what I have currently but I'll try to make it easy to switch to another remote signal.
 
-![Photos of two types of Mistsubishi aircons I have at my place](img/0001-aircons.jpg)
+![Photos of two types of Mitsubishi aircons I have at my place](img/0001-aircons.jpg)
 
 My initial vision of how this should work was: a Raspberry Pi Zero W with a small REST server with endpoints such as `/on` and `/off` that sends infrared (IR) signals through an IR LED, mimicking how a remote does it. Google Home then can just ping the endpoints - that is, if we somehow can teach it to.
 
@@ -39,7 +37,7 @@ First things first, I needed to make sure that my aircon is controlled by IR sig
 
 ![Infrared diode in the AC remote visibly blinks on the webcam footage](img/0002-ac-remote.gif)
 
-After that the whole project seemed easy. I quickly ordered these two components, and IR diode (left) and an IR receiver (right):
+After that the whole project seemed easy. I quickly ordered these two components, an IR diode (left) and an IR receiver (right):
 
 ![A photo of IR diodes and IR receivers I ordered](img/0003-ir-tranceiver.jpg)
 
