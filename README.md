@@ -56,6 +56,13 @@ Another avenue of exploration was on how to connect the device to Google Home an
 
 Unfortunately as it turns out you still have to create some kind of a Google Action (I haven't looked into this yet) in the online developer panel and setup a cloud fulfilment for that action as a fallback if LAN fulfilment doesn't work. To me it seems weird that you have to have a cloud fulfilment path and there is no way to have pure local devices; seems like a lot of potential customers with security requirements (organizations) are simply locked out of Google Home infra because of that.
 
+**Detecting Presence**
+I didn't do a lot of research on this topic but I found that you can buy passive infrared sensors for about a dollar a piece and they can output a signal if there is someone in their range.
+
+![Passive infrared sensor](img/0007-PIR.jpg)
+
+I haven't done any further research in this direction so far.
+
 **Other Stuff**
 My Raspberry Pi Zero W turned out to be missing GPIO pins head, so I had to solder them on. This was the fourth time I was holding a soldering iron in my hands, so it was quite stressful.
 
@@ -63,11 +70,11 @@ My Raspberry Pi Zero W turned out to be missing GPIO pins head, so I had to sold
 
 After soldering 40 tiny junctions however, I feel much more confident in my skills. After visual inspection it seems that all junctions are properly soldered but time will tell.
 
-![](img/0005-soldering-complete.jpg)
+![Photo of GPIO head fully soldered on to the raspberry pi](img/0005-soldering-complete.jpg)
 
 Some junctions are just fine, others are a not so good (bottom right on the image below). Hopefully they will all work out.
 
-![](img/0006-closeup.jpg)
+![Microscope photo of GPIO head fully soldered on to the raspberry pi with good and bad junctions visible](img/0006-closeup.jpg)
 
 That's all for now, signing off.
 
